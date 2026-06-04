@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 11 — Hands-on</title>
+    <link rel="stylesheet" href="../../shared/css/styles.css">
+</head>
+<body>
+    <div class="page-shell">
+        <main class="page-main" id="main-content">
+            <header class="page-title">
+                <p class="lesson-label">Day 11 · Hands-on</p>
+                <h1>Event exercises</h1>
+            </header>
+            <section aria-labelledby="q-ho">
+                <h2 id="q-ho">Questions</h2>
+                <ol>
+                    <li>Click counter on <code>#counter-btn</code> updating <code>#count</code>; bonus change button text after 10 clicks.</li>
+                    <li>Live preview: <code>input</code> event copies <code>#live-input</code> to <code>#preview</code>; empty shows placeholder text.</li>
+                    <li>Form submit: <code>preventDefault</code>, welcome message from name; empty name message.</li>
+                    <li>Bonus: one delegated click on <code>#todo-list</code> toggles <code>done</code> on <code>li</code>; add new <code>li</code>.</li>
+                </ol>
+            </section>
+
+            <p>
+                <button type="button" id="counter-btn">Click me</button>
+                Count: <span id="count">0</span>
+            </p>
+
+            <p>
+                <label for="live-input">Type:</label>
+                <input id="live-input" placeholder="Type something..." />
+            </p>
+            <p id="preview"></p>
+
+            <form id="reg-form">
+                <input id="name-field" placeholder="Your name" />
+                <button type="submit">Submit</button>
+            </form>
+            <p id="welcome"></p>
+
+            <ul id="todo-list">
+                <li>Buy milk</li>
+                <li>Walk dog</li>
+                <li>Pay bills</li>
+            </ul>
+
+            <h2>Answers</h2>
+            <pre id="out" class="run-output"></pre>
+        </main>
+        <aside class="site-outline" aria-label="Curriculum outline">
+            <p class="site-outline-title">This day</p>
+            <ul class="site-outline-tree">
+                <li class="site-outline-item"><a href="../../index.html">Overview</a></li>
+                <li><a href="lesson.html">Lesson</a></li>
+                <li><a href="hands-on.html" aria-current="page">Hands-on</a></li>
+                <li><a href="homework.html">Homework</a></li>
+            </ul>
+        </aside>
+    </div>
+    <script defer src="../js/hands-on.js"></script>
+    <script src="../../shared/js/nav-lock.js"></script>
+</body>
+</html>

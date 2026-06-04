@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 13 — Hands-on</title>
+    <link rel="stylesheet" href="../../shared/css/styles.css">
+</head>
+<body>
+    <div class="page-shell">
+        <main class="page-main" id="main-content">
+            <header class="page-title">
+                <p class="lesson-label">Day 13 · Hands-on</p>
+                <h1>Hoisting and TDZ</h1>
+            </header>
+            <section aria-labelledby="q-ho">
+                <h2 id="q-ho">Questions</h2>
+                <ol>
+                    <li>Type: <code>console.log(name); var name = "Priya"; console.log(name);</code> — predict each log. Why is the first <code>undefined</code> and not a <code>ReferenceError</code>?</li>
+                    <li>Type: <code>console.log(city); let city = "Jaipur";</code> — predict. Note the exact error. Move <code>let city</code> above the log and confirm it runs.</li>
+                    <li>In order: <code>sayHi();</code> <code>greet();</code> <code>function sayHi() { console.log("Hi"); }</code> <code>var greet = function () { console.log("Hello"); };</code> — which call works, which throws, and what error type?</li>
+                    <li>Bonus: <code>multiply</code>, <code>square</code>, <code>printSquare(5)</code> — final log? Stack when <code>multiply(5,5)</code> runs?</li>
+                </ol>
+            </section>
+            <h2>Answers</h2>
+            <pre id="out" class="run-output"></pre>
+        </main>
+        <aside class="site-outline" aria-label="Curriculum outline">
+            <p class="site-outline-title">This day</p>
+            <ul class="site-outline-tree">
+                <li class="site-outline-item"><a href="../../index.html">Overview</a></li>
+                <li><a href="lesson.html">Lesson</a></li>
+                <li><a href="hands-on.html" aria-current="page">Hands-on</a></li>
+                <li><a href="homework.html">Homework</a></li>
+            </ul>
+        </aside>
+    </div>
+    <script defer src="../js/hands-on.js"></script>
+    <script src="../../shared/js/nav-lock.js"></script>
+</body>
+</html>

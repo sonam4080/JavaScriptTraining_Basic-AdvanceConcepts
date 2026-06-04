@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 18 — Hands-on</title>
+    <link rel="stylesheet" href="../../shared/css/styles.css">
+</head>
+<body>
+    <div class="page-shell">
+        <main class="page-main" id="main-content">
+            <header class="page-title">
+                <p class="lesson-label">Day 18 · Hands-on</p>
+                <h1>Async: callbacks &amp; promises</h1>
+            </header>
+            <section aria-labelledby="q-ho">
+                <h2 id="q-ho">Questions</h2>
+                <ol>
+                    <li>Predict order: <code>console.log("A"); setTimeout(() => console.log("B"), 0); console.log("C"); Promise.resolve().then(() => console.log("D"));</code> — then run. Why does <code>D</code> run before <code>B</code>?</li>
+                    <li>Promisify <code>delayLog(msg, ms, cb)</code> as <code>delayLogPromise(msg, ms)</code>; chain logs <code>"1"</code> (300ms), <code>"2"</code> (200ms), <code>"3"</code> (100ms).</li>
+                    <li><code>fetchPrice(item, ms)</code> for pen 50, book 200, bag 800 — <code>Promise.all</code> in parallel, sum prices, time with <code>Date.now()</code> (≈ slowest ms).</li>
+                    <li>Bonus: same three inputs with <code>Promise.all</code> vs <code>Promise.allSettled</code> — when to use which?</li>
+                </ol>
+            </section>
+            <h2>Answers</h2>
+            <pre id="out" class="run-output"></pre>
+        </main>
+        <aside class="site-outline" aria-label="Curriculum outline">
+            <p class="site-outline-title">This day</p>
+            <ul class="site-outline-tree">
+                <li class="site-outline-item"><a href="../../index.html">Overview</a></li>
+                <li><a href="lesson.html">Lesson</a></li>
+                <li><a href="hands-on.html" aria-current="page">Hands-on</a></li>
+                <li><a href="homework.html">Homework</a></li>
+            </ul>
+        </aside>
+    </div>
+    <script defer src="../js/hands-on.js"></script>
+    <script src="../../shared/js/nav-lock.js"></script>
+</body>
+</html>

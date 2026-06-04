@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 17 — Hands-on</title>
+    <link rel="stylesheet" href="../../shared/css/styles.css">
+</head>
+<body>
+    <div class="page-shell">
+        <main class="page-main" id="main-content">
+            <header class="page-title">
+                <p class="lesson-label">Day 17 · Hands-on</p>
+                <h1>Classes &amp; OOP</h1>
+            </header>
+            <section aria-labelledby="q-ho">
+                <h2 id="q-ho">Questions</h2>
+                <ol>
+                    <li><code>Rectangle</code> with <code>width</code>, <code>height</code>; <code>get area()</code>; <code>scale(factor)</code> in place. Create <code>2×3</code>, log area, scale by <code>2</code>, log area again.</li>
+                    <li><code>Employee(name, salary)</code> with <code>describe()</code> logging earnings — <code>Manager(name, salary, team)</code> extends it, overrides <code>describe()</code> to call <code>super.describe()</code> then log team size. Test Riya, 80000, team of three names.</li>
+                    <li><code>Counter</code> with private <code>#count</code>, <code>inc()</code>, <code>dec()</code>, <code>get value</code>; <code>dec</code> throws if count would go negative. Run inc×3, dec×1, log value, then try dec×4 in <code>try/catch</code>.</li>
+                    <li>Bonus: <code>ValidationError</code> extends <code>Error</code> with <code>field</code> and <code>message</code>; <code>validateUser({ name, age })</code> throws for missing name or negative age — two <code>try/catch</code> demos logging <code>e.field</code> and <code>e.message</code>.</li>
+                </ol>
+            </section>
+            <h2>Answers</h2>
+            <pre id="out" class="run-output"></pre>
+        </main>
+        <aside class="site-outline" aria-label="Curriculum outline">
+            <p class="site-outline-title">This day</p>
+            <ul class="site-outline-tree">
+                <li class="site-outline-item"><a href="../../index.html">Overview</a></li>
+                <li><a href="lesson.html">Lesson</a></li>
+                <li><a href="hands-on.html" aria-current="page">Hands-on</a></li>
+                <li><a href="homework.html">Homework</a></li>
+            </ul>
+        </aside>
+    </div>
+    <script defer src="../js/hands-on.js"></script>
+    <script src="../../shared/js/nav-lock.js"></script>
+</body>
+</html>

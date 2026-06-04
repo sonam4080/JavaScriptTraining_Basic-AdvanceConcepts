@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 15 — Homework</title>
+    <link rel="stylesheet" href="../../shared/css/styles.css">
+</head>
+<body>
+    <div class="page-shell">
+        <main class="page-main" id="main-content">
+            <header class="page-title">
+                <p class="lesson-label">Day 15 · Homework</p>
+                <h1>The this keyword — practice</h1>
+            </header>
+            <section aria-labelledby="q-hw">
+                <h2 id="q-hw">Questions</h2>
+                <ol>
+                    <li><code>user = { name, greet }</code> with <code>greet</code> logging <code>this.name</code> — predict <code>user.greet()</code>, <code>const fn = user.greet; fn()</code>, <code>user.greet.call({ name: "X" })</code>, then run.</li>
+                    <li>Any class-method callback bug: fix three ways (bind, arrow wrapper, class field arrow) and document each.</li>
+                    <li><code>sum(...nums)</code> — use <code>.apply</code> with <code>[1, 2, 3, 4, 5]</code>. Why does <code>.apply</code> shine here?</li>
+                    <li>Top-level <code>const f = () => console.log(this)</code> — <code>.bind({ x: 1 })</code> and call. What logs? Why?</li>
+                    
+                </ol>
+            </section>
+            <h2>Answers</h2>
+            <pre id="out" class="run-output"></pre>
+        </main>
+        <aside class="site-outline" aria-label="Curriculum outline">
+            <p class="site-outline-title">This day</p>
+            <ul class="site-outline-tree">
+                <li class="site-outline-item"><a href="../../index.html">Overview</a></li>
+                <li><a href="lesson.html">Lesson</a></li>
+                <li><a href="hands-on.html">Hands-on</a></li>
+                <li><a href="homework.html" aria-current="page">Homework</a></li>
+            </ul>
+        </aside>
+    </div>
+    <script defer src="../js/homework.js"></script>
+    <script src="../../shared/js/nav-lock.js"></script>
+</body>
+</html>

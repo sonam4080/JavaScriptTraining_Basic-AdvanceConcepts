@@ -1,0 +1,21 @@
+(function () {
+    const lines = [];
+    lines.push("Task — const string, let counter, log values and typeof");
+    const courseTitle = "JavaScript Upskilling";
+    const cohortYear = 2026;
+    let completedLessons = 0;
+    completedLessons += 1;
+    lines.push("Answer: courseTitle : " + courseTitle);
+    console.log(courseTitle);
+    lines.push("Answer: cohortYear : " + cohortYear);
+    console.log(cohortYear);
+    lines.push("Answer: completedLessons after += 1 : " + completedLessons);
+    console.log(completedLessons);
+    lines.push("Answer: typeof courseTitle : " + typeof courseTitle);
+    console.log(typeof courseTitle);
+    lines.push("Answer: typeof cohortYear : " + typeof cohortYear);
+    console.log(typeof cohortYear);
+    lines.push("Answer: typeof completedLessons : " + typeof completedLessons);
+    console.log(typeof completedLessons);
+    document.getElementById("out").textContent = lines.join("\n");
+})();

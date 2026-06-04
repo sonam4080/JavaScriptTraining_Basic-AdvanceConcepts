@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 20 — Homework</title>
+    <link rel="stylesheet" href="../../shared/css/styles.css">
+</head>
+<body>
+    <div class="page-shell">
+        <main class="page-main" id="main-content">
+            <header class="page-title">
+                <p class="lesson-label">Day 20 · Homework</p>
+                <h1>Event loop — practice</h1>
+            </header>
+            <section aria-labelledby="q-hw">
+                <h2 id="q-hw">Questions</h2>
+                <ol>
+                    <li>Re-do three predict-the-output snippets on paper, then verify in the console.</li>
+                    <li>Explore: <a href="http://latentflip.com/loupe">latentflip.com/loupe</a> — paste <code>console.log("1"); setTimeout(() => console.log("2"), 0); console.log("3");</code>.</li>
+                    <li>Build <code>chunk(array, fn, chunkSize)</code> that processes items in chunks, yielding with <code>setTimeout(0)</code> between chunks.</li>
+                    <li>Prove <code>await</code> continuation runs before <code>setTimeout(0)</code> (micro vs macro).</li>
+                </ol>
+            </section>
+            <h2>Answers</h2>
+            <pre id="out" class="run-output"></pre>
+        </main>
+        <aside class="site-outline" aria-label="Curriculum outline">
+            <p class="site-outline-title">This day</p>
+            <ul class="site-outline-tree">
+                <li class="site-outline-item"><a href="../../index.html">Overview</a></li>
+                <li><a href="lesson.html">Lesson</a></li>
+                <li><a href="hands-on.html">Hands-on</a></li>
+                <li><a href="homework.html" aria-current="page">Homework</a></li>
+            </ul>
+        </aside>
+    </div>
+    <script defer src="../js/homework.js"></script>
+    <script src="../../shared/js/nav-lock.js"></script>
+</body>
+</html>

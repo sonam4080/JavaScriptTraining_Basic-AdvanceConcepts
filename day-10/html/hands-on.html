@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 10 — Hands-on</title>
+    <link rel="stylesheet" href="../../shared/css/styles.css">
+</head>
+<body>
+    <div class="page-shell">
+        <main class="page-main" id="main-content">
+            <header class="page-title">
+                <p class="lesson-label">Day 10 · Hands-on</p>
+                <h1>DOM exercises</h1>
+            </header>
+            <section aria-labelledby="q-ho">
+                <h2 id="q-ho">Questions</h2>
+                <ol>
+                    <li><code>querySelector('#title')</code>: set text, color crimson, font Georgia.</li>
+                    <li>Toggle <code>document.body.classList.toggle('dark')</code> twice on <code>#theme-btn</code> context; log <code>contains('dark')</code>.</li>
+                    <li>Build <code>&lt;li&gt;</code> items from names array with optional indexed text.</li>
+                    <li>Bonus: card for product inside <code>#cards</code>.</li>
+                </ol>
+            </section>
+
+            <h1 id="title">JS Training</h1>
+            <button type="button" id="theme-btn">Toggle Theme</button>
+            <ul id="names-list"></ul>
+            <div id="cards"></div>
+
+            <h2>Answers</h2>
+            <pre id="out" class="run-output"></pre>
+        </main>
+        <aside class="site-outline" aria-label="Curriculum outline">
+            <p class="site-outline-title">This day</p>
+            <ul class="site-outline-tree">
+                <li class="site-outline-item"><a href="../../index.html">Overview</a></li>
+                <li><a href="lesson.html">Lesson</a></li>
+                <li><a href="hands-on.html" aria-current="page">Hands-on</a></li>
+                <li><a href="homework.html">Homework</a></li>
+            </ul>
+        </aside>
+    </div>
+    <script defer src="../js/hands-on.js"></script>
+    <script src="../../shared/js/nav-lock.js"></script>
+</body>
+</html>

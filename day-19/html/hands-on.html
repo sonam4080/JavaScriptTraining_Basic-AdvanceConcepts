@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 19 — Hands-on</title>
+    <link rel="stylesheet" href="../../shared/css/styles.css">
+</head>
+<body>
+    <div class="page-shell">
+        <main class="page-main" id="main-content">
+            <header class="page-title">
+                <p class="lesson-label">Day 19 · Hands-on</p>
+                <h1>Async / await</h1>
+            </header>
+            <section aria-labelledby="q-ho">
+                <h2 id="q-ho">Questions</h2>
+                <ol>
+                    <li>Rewrite <code>fetchUser(7).then(u => fetchOrders(u.id)).then(...).catch(...)</code> as <code>async function showOrders(id)</code> with <code>await</code> and <code>try/catch</code>. Mock <code>fetchUser</code> / <code>fetchOrders</code> (~300ms).</li>
+                    <li><code>fetchPrice(id)</code> resolving in ~500ms to <code>{ id, price: 100 }</code> — time <code>slow()</code> (three awaits) vs <code>fast()</code> (<code>Promise.all</code>).</li>
+                    <li><code>ids.forEach(async id => ...)</code> with <code>fetchPrice</code> — show early return; fix with <code>for...of</code> and with <code>Promise.all + map</code>.</li>
+                    <li>Bonus: <code>retry(fn, attempts)</code> for an async <code>fn</code>; throw last error if all reject.</li>
+                </ol>
+            </section>
+            <h2>Answers</h2>
+            <pre id="out" class="run-output"></pre>
+        </main>
+        <aside class="site-outline" aria-label="Curriculum outline">
+            <p class="site-outline-title">This day</p>
+            <ul class="site-outline-tree">
+                <li class="site-outline-item"><a href="../../index.html">Overview</a></li>
+                <li><a href="lesson.html">Lesson</a></li>
+                <li><a href="hands-on.html" aria-current="page">Hands-on</a></li>
+                <li><a href="homework.html">Homework</a></li>
+            </ul>
+        </aside>
+    </div>
+    <script defer src="../js/hands-on.js"></script>
+    <script src="../../shared/js/nav-lock.js"></script>
+</body>
+</html>

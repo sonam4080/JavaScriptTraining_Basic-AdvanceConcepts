@@ -1,0 +1,61 @@
+(function () {
+    const lines = [];
+    const a = 17;
+    const b = 5;
+    lines.push("Task 1 — arithmetic with a=17, b=5");
+    lines.push("Answer: a + b : " + (a + b));
+    console.log(a + b);
+    lines.push("Answer: a - b : " + (a - b));
+    console.log(a - b);
+    lines.push("Answer: a * b : " + (a * b));
+    console.log(a * b);
+    lines.push("Answer: a / b : " + (a / b));
+    console.log(a / b);
+    lines.push("Answer: a % b : " + (a % b));
+    console.log(a % b);
+    lines.push("Answer: a ** b : " + (a ** b));
+    console.log(a ** b);
+    lines.push("Answer: 42 even/odd : " + (42 % 2 === 0 ? "even" : "odd"));
+    console.log(42 % 2 === 0 ? "even" : "odd");
+
+    lines.push("");
+    lines.push("Task 2 — equality");
+    lines.push('Answer: 5 == "5" : ' + (5 == "5"));
+    console.log(5 == "5");
+    lines.push('Answer: 5 === "5" : ' + (5 === "5"));
+    console.log(5 === "5");
+    lines.push("Answer: 0 == false : " + (0 == false));
+    console.log(0 == false);
+    lines.push("Answer: 0 === false : " + (0 === false));
+    console.log(0 === false);
+    lines.push("Answer: null == undefined : " + (null == undefined));
+    console.log(null == undefined);
+
+    lines.push("");
+    lines.push("Task 3 — access control");
+    let hasLicense = true;
+    const hasCar = false;
+    const studentAge = 19;
+    lines.push("Answer: canDrive (age>=18 && license) : " + (studentAge >= 18 && hasLicense));
+    console.log(studentAge >= 18 && hasLicense);
+    lines.push("Answer: canTravel (license || car) : " + (hasLicense || hasCar));
+    console.log(hasLicense || hasCar);
+    hasLicense = false;
+    lines.push("Answer: after hasLicense=false, canDrive : " + (studentAge >= 18 && hasLicense));
+    console.log(studentAge >= 18 && hasLicense);
+    lines.push("Answer: canTravel : " + (hasLicense || hasCar));
+    console.log(hasLicense || hasCar);
+
+    lines.push("");
+    lines.push("Task Bonus — ternary and ?? vs ||");
+    lines.push("Answer: mood (age>=18) : " + (studentAge >= 18 ? "adult" : "minor"));
+    console.log(studentAge >= 18 ? "adult" : "minor");
+    let username = null;
+    lines.push("Answer: null ?? 'Guest' : " + (username ?? "Guest"));
+    console.log(username ?? "Guest");
+    lines.push("Answer: null || 'Guest' : " + (username || "Guest"));
+    console.log(username || "Guest");
+    lines.push("Answer: ?? only replaces null/undefined; || also treats 0 and '' as missing.");
+
+    document.getElementById("out").textContent = lines.join("\n");
+})();

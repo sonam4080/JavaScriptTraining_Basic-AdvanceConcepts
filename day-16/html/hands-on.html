@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 16 — Hands-on</title>
+    <link rel="stylesheet" href="../../shared/css/styles.css">
+</head>
+<body>
+    <div class="page-shell">
+        <main class="page-main" id="main-content">
+            <header class="page-title">
+                <p class="lesson-label">Day 16 · Hands-on</p>
+                <h1>Prototypes &amp; the prototype chain</h1>
+            </header>
+            <section aria-labelledby="q-ho">
+                <h2 id="q-ho">Questions</h2>
+                <ol>
+                    <li><code>const arr = [1, 2, 3];</code> — log <code>Object.getPrototypeOf(arr)</code>, then one step up, then again. In a comment in your notes, sketch the chain to <code>null</code>.</li>
+                    <li><code>vehicle</code> with <code>start()</code> — use <code>Object.create(vehicle)</code> for <code>car</code> and <code>bike</code> with names. Call <code>start()</code> on both. Use <code>hasOwnProperty</code> and <code>in</code> for <code>name</code> vs <code>start</code>.</li>
+                    <li><code>Person(name)</code> with <code>Person.prototype.greet</code> — build <code>Student(name, school)</code> inheriting via <code>Person.call</code> and <code>Object.create(Person.prototype)</code>, add <code>study</code>. Instantiate <code>new Student("Riya", "IIT Delhi")</code> and call <code>greet</code> and <code>study</code>.</li>
+                    <li>Bonus: <code>const dog = Object.create({ species: "Canis" }); dog.name = "Bruno";</code> — predict and run five checks: <code>hasOwnProperty("name")</code>, <code>hasOwnProperty("species")</code>, <code>"name" in dog</code>, <code>"species" in dog</code>, <code>"toString" in dog</code>.</li>
+                </ol>
+            </section>
+            <h2>Answers</h2>
+            <pre id="out" class="run-output"></pre>
+        </main>
+        <aside class="site-outline" aria-label="Curriculum outline">
+            <p class="site-outline-title">This day</p>
+            <ul class="site-outline-tree">
+                <li class="site-outline-item"><a href="../../index.html">Overview</a></li>
+                <li><a href="lesson.html">Lesson</a></li>
+                <li><a href="hands-on.html" aria-current="page">Hands-on</a></li>
+                <li><a href="homework.html">Homework</a></li>
+            </ul>
+        </aside>
+    </div>
+    <script defer src="../js/hands-on.js"></script>
+    <script src="../../shared/js/nav-lock.js"></script>
+</body>
+</html>

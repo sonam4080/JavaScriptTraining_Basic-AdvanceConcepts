@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 22 — Hands-on</title>
+    <link rel="stylesheet" href="../../shared/css/styles.css">
+</head>
+<body>
+    <div class="page-shell">
+        <main class="page-main" id="main-content">
+            <header class="page-title">
+                <p class="lesson-label">Day 22 · Hands-on</p>
+                <h1>Map, Set, WeakMap &amp; WeakSet</h1>
+            </header>
+            <section aria-labelledby="q-ho">
+                <h2 id="q-ho">Questions</h2>
+                <ol>
+                    <li>Build a <code>Map</code> of products <code>"pen"→50</code>, <code>"book"→200</code>, <code>"bag"→800</code>; iterate <code>for...of</code> as <code>item: ₹price</code>; use <code>.has</code>, <code>.get</code>, <code>.delete</code>, <code>.size</code>; round-trip with <code>Object.fromEntries</code> and <code>new Map(Object.entries(...))</code>.</li>
+                    <li>Deduplicate <code>[101, 102, 103, 101, 104, 102, 105]</code> with a <code>Set</code>; unique count. Then try <code>[1, "1", 1, true, 1n]</code> — predict size.</li>
+                    <li><code>memoize(fn)</code> using a <code>Map</code> cache — wrap <code>expensiveSquare(n)</code> that logs <code>"computing..."</code> once per new <code>n</code>.</li>
+                    <li>Bonus: <code>attach(obj, data)</code> / <code>get(obj)</code> backed by a <code>WeakMap</code> (two dummy “button” objects).</li>
+                </ol>
+            </section>
+            <h2>Answers</h2>
+            <pre id="out" class="run-output"></pre>
+        </main>
+        <aside class="site-outline" aria-label="Curriculum outline">
+            <p class="site-outline-title">This day</p>
+            <ul class="site-outline-tree">
+                <li class="site-outline-item"><a href="../../index.html">Overview</a></li>
+                <li><a href="lesson.html">Lesson</a></li>
+                <li><a href="hands-on.html" aria-current="page">Hands-on</a></li>
+                <li><a href="homework.html">Homework</a></li>
+            </ul>
+        </aside>
+    </div>
+    <script defer src="../js/hands-on.js"></script>
+    <script src="../../shared/js/nav-lock.js"></script>
+</body>
+</html>

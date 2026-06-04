@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 15 — Hands-on</title>
+    <link rel="stylesheet" href="../../shared/css/styles.css">
+</head>
+<body>
+    <div class="page-shell">
+        <main class="page-main" id="main-content">
+            <header class="page-title">
+                <p class="lesson-label">Day 15 · Hands-on</p>
+                <h1>The this keyword</h1>
+            </header>
+            <section aria-labelledby="q-ho">
+                <h2 id="q-ho">Questions</h2>
+                <ol>
+                    <li>Predict <code>this</code>: <code>user</code> with <code>name: "Priya"</code> and <code>greet() { console.log(this.name); }</code> — call <code>user.greet()</code>, then <code>const g = user.greet; g()</code>. Explain why the second call loses <code>this</code>.</li>
+                    <li><code>class Timer { constructor() { this.sec = 0; } tick() { this.sec++; console.log(this.sec); } }</code> — <code>setInterval(t.tick, 1000)</code> throws. Fix three ways: <code>.bind</code>, arrow wrapper, class field arrow. Verify 1, 2, 3, …</li>
+                    <li><code>describe(role, city)</code> with <code>u = { name: "Aarav" }</code> — use <code>.call</code>, <code>.apply</code>, then <code>.bind</code> (pre-fill role <code>"developer"</code>). Comment the one-line difference between the three.</li>
+                    <li>Bonus: <code>team</code> with <code>printRegular</code> (forEach with <code>function</code>) vs <code>printArrow</code> (forEach with arrow) — which breaks and why.</li>
+                </ol>
+            </section>
+            <h2>Answers</h2>
+            <pre id="out" class="run-output"></pre>
+        </main>
+        <aside class="site-outline" aria-label="Curriculum outline">
+            <p class="site-outline-title">This day</p>
+            <ul class="site-outline-tree">
+                <li class="site-outline-item"><a href="../../index.html">Overview</a></li>
+                <li><a href="lesson.html">Lesson</a></li>
+                <li><a href="hands-on.html" aria-current="page">Hands-on</a></li>
+                <li><a href="homework.html">Homework</a></li>
+            </ul>
+        </aside>
+    </div>
+    <script defer src="../js/hands-on.js"></script>
+    <script src="../../shared/js/nav-lock.js"></script>
+</body>
+</html>
